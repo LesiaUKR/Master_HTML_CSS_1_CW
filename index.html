@@ -4,31 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <!-- HEADER -->
-      <nav>
-      <a href="index.html">
-        <span>SIMPLY</span>
-        <span>Chocolate</span>
-        <img src="./images/logo.svg" alt="logotype" width="24" height="24" />
-      </a>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="">How it’s made?</a>
-        </li>
-        <li>
-          <a href="">Chocolate is loved</a>
-        </li>
-      </ul>
-    </nav>
-      <ul>
-        <li>
-          <a href="">
+    <div class="container page-header-container">
+      <nav class="page-navigation">
+        <a href="index.html" class="logo link">
+          <span class="logo-text-italic">simply</span>&nbsp;chocolate
+          <img
+            class="logo-icon"
+            src="./images/logo.svg"
+            alt="logotype"
+            width="24"
+            height="24"
+          />
+        </a>
+        <ul class="menu-list list">
+          <li class="menu-item">
+            <a class="menu-link link" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">How it’s made?</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-list list">
+        <li class="social-list-item">
+          <a class="social-list-link link" href="">
             <img
               src="./images/icons/facebook.svg"
               alt="facebook"
@@ -37,8 +51,8 @@
             />
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="social-list-item">
+          <a class="social-list-link link" href="">
             <img
               src="./images/icons/instagram.svg"
               alt="instagram"
@@ -47,8 +61,8 @@
             />
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="social-list-item">
+          <a class="social-list-link link" href="">
             <img
               src="./images/icons/twitter.svg"
               alt="twitter"
@@ -58,148 +72,191 @@
           </a>
         </li>
       </ul>
+      </div>
     </header>
     <main>
       <!-- HERO -->
       <section>
-        <h1>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
-      <button type="button">Buy now</button>
-      <a href="">How it’s made</a>
-    <a href="">
-        scroll down
-    <img 
-    src="./images/icons/scroll_down.svg" 
-    alt="scroll down icon" 
-    width="22" 
-    height="22"/>
-</a>
-    </section>
-    <!-- BENEFITS -->
-      <section>
-        <h2 hidden>Our benefits</h2>
-        <ul>
-            <li>
-                <h3>Unsurpassed taste</h3>
-                <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that
-                simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of
-                chocolate bliss.</p>
-            </li>
-            <li>
-                <h3>Affordable price</h3>
-                <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
-                Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and
-                indulge in affordable luxury today.</p>
-            </li>
-            <li>
-                <h3>Own production</h3>
-                <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting
-                the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
-            </li>
-        </ul>
+        <div class="container">
+        <h1>
+          Treat yourself or a loved one to our finest ingredients for a moment
+          of pure delight!
+        </h1>
+        <button type="button">Buy now</button>
+        <a href="" class="link">How it’s made</a>
+        <a href="" class="link">
+          scroll down
+          <img
+            src="./images/icons/scroll_down.svg"
+            alt="scroll down icon"
+            width="22"
+            height="22"
+          />
+        </a>
+        </div>
       </section>
+      <!-- BENEFITS -->
       <section>
-        <h2>Our <span>products</span></h2>
-        <ul>
-            <li>
-                <img src="./images/our_products/img-1.jpg" alt="orange chocolate">
-                <h3>orange</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-2.jpg" alt="apple&cranberry chocolate">
-                <h3>APPLE&CRANBERRY</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-3.jpg" alt="">
-                <h3>lime&sea salt</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-4.jpg" alt="">
-                <h3>pineapple</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-5.jpg" alt="">
-                <h3>Classic</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-6.jpg" alt="">
-                <h3>honey</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-7.jpg" alt="">
-                <h3>Roasted fruits</h3>
-                <p></p>
-                <p></p>
-            </li>
-            <li>
-                <img src="./images/our_products/img-8.jpg" alt="">
-                <h3>Classic</h3>
-                <p></p>
-                <p></p>
-            </li>
+        <div class="container">
+        <h2  hidden>Our benefits</h2>
+        <ul class="benefits-list list">
+          <li class="benefits-list-item">
+            <h3 class="benefits-list-title">Unsurpassed taste</h3>
+            <p class="benefits-list-text">
+              Crafted with the finest quality cocoa beans and a dedication to
+              perfection, each bite is a decadent experience that simply cannot
+              be matched. Savor the richness and complexity of our Unsurpassed
+              Taste and discover a new level of chocolate bliss.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <h3 class="benefits-list-title">Affordable price</h3>
+            <p class="benefits-list-text">
+              Indulge in high-quality chocolate without breaking the bank with
+              Simply Chocolate's selection of affordable treats. Enjoy
+              mouth-watering truffles and velvety chocolate bars without
+              sacrificing taste or quality. Browse our selection and indulge in
+              affordable luxury today.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <h3 class="benefits-list-title">Own production</h3>
+            <p class="benefits-list-text">
+              We take pride in our own production process, ensuring that every
+              step is carefully crafted to perfection. From selecting the finest
+              ingredients to handcrafting each piece, our attention to detail is
+              evident in every bite.
+            </p>
+          </li>
         </ul>
+        </div>
       </section>
+        <!-- OUR PRODUCTS -->
+      <section class="section">
+            <div class="container">
+        <h2 class="section-title">Our <span>products</span></h2>
+        <ul class="list products-list">
+          <li class="products-list-item">
+            <img src="./images/our_products/img-1.jpg" alt="orange chocolate" />
+            <h3>orange</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img
+              src="./images/our_products/img-2.jpg"
+              alt="apple&cranberry chocolate"
+            />
+            <h3>APPLE&CRANBERRY</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-3.jpg" alt="" />
+            <h3>lime&sea salt</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-4.jpg" alt="" />
+            <h3>pineapple</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-5.jpg" alt="" />
+            <h3>Classic</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-6.jpg" alt="" />
+            <h3>honey</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-7.jpg" alt="" />
+            <h3>Roasted fruits</h3>
+            <p></p>
+            <p></p>
+          </li>
+          <li class="products-list-item">
+            <img src="./images/our_products/img-8.jpg" alt="" />
+            <h3>Classic</h3>
+            <p></p>
+            <p></p>
+          </li>
+        </ul>
+        </div>
+      </section>
+       <!-- /OUR PRODUCTS -->
+    </main>
+    <footer>
       <!-- FOOTER -->
       <section>
+        <div class="container">
         <div>
-            <h2><span>Chocolate</span> a delicious cure for a bad day</h2>
+          <h2><span>Chocolate</span> a delicious cure for a bad day</h2>
         </div>
         <div>
-            <h3>Social networks</h3>
-            <ul>
-                <li>
-                    <a><img src="" alt=""width="" height=""/>
-                    </a>                </li>
-                <li>
-                <a><img src="" alt="" width="" height=""/></a>
-                </li>
-                <li>
-                <a><img src="" alt="" width="" height=""/></a>
-                </li>
+          <h3>Social networks</h3>
+          <ul class="list">
+            <li>
+              <a href="" class="link"
+                ><img src="" alt="" width="" height="" />
+              </a>
+            </li>
+            <li>
+              <a href="" class="link"
+                ><img src="" alt="" width="" height=""
+              /></a>
+            </li>
+            <li>
+              <a href="" class="link"
+                ><img src="" alt="" width="" height=""
+              /></a>
+            </li>
+          </ul>
+          <h3>Contact us</h3>
+          <address>
+            <ul class="list">
+              <li>
+                <a href="tel:+380684439426" class="link">+380 (68) 443-94-26</a>
+              </li>
+              <li>
+                <a href="mailto:simplychoc@gmail.com" class="link"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
             </ul>
-<h3>Contact us</h3>
-<address>
-<ul>
-    <li>
-        <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-    </li>
-    <li>
-        <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-    </li>
-</ul>
-</address>
+          </address>
         </div>
         <nav>
-            <a href="index.html">
-                <span>SIMPLY</span>
-                <span>Chocolate</span>
-                <img src="./images/logo.svg" alt="logotype" width="24" height="24" />
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="">How it’s made?</a>
-                </li>
-                <li>
-                    <a href="">Chocolate is loved</a>
-                </li>
-            </ul>
+          <a href="index.html" class="link">
+             <a href="index.html" class="logo link">
+          <span class="logo-text-italic">simply</span>chocolate
+            <img
+              src="./images/logo.svg"
+              alt="logotype"
+              width="24"
+              height="24"
+            />
+          </a>
+          <ul class="list">
+            <li>
+              <a href="index.html" class="link">Home</a>
+            </li>
+            <li>
+              <a href="" class="link">How it’s made?</a>
+            </li>
+            <li>
+              <a href="" class="link">Chocolate is loved</a>
+            </li>
+          </ul>
         </nav>
+        </div>
       </section>
-    </main>
-    <footer></footer>
+    </footer>
   </body>
 </html>
